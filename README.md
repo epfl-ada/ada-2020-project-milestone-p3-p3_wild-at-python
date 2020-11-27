@@ -50,7 +50,7 @@ In our case the only data available is the one that came with the paper. No augm
 - Design of both RNNs (ana, nizar, zeineb)
 - Implementation of the rst RNN (nizar)
 - Implementation of second RNN (ana + zeineb)
-- Statistical analysis + plots of the rst RNN (nizar)
+- Statistical analysis + plots of the first RNN (nizar)
 - Statistical analysis + plots of the second RNN (zeineb)
 - report (ana, nizar, zeineb)
 - data story (ana)
