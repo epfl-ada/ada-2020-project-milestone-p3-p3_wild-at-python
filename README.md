@@ -1,9 +1,9 @@
 ﻿
-#1  Title
+# 1 Title
 
 Linguistic harbringers of betrayal
 
-#2  Abstract
+# 2 Abstract
 
 For the linguistics harbringers of betrayal, the authors try to predict if a betrayal is going to occur or not, using the following features of the messages:
 
@@ -16,7 +16,7 @@ However, we do notice two things that we can add to the analysis made in this pa
 
 When we say text handling and time series we usually hear with it recurrent neural nets, which are perfect for the job because of their computation graph. Thus, we will try to use them to make some analyses on their results
 
-**3  Research Questions**
+# 3 Research Questions
 - What is the eect of time on the ecien cy of model in foretelling betrayal ?
 - What if we add automatic feature extraction ? Does this improve the performance of the model ?
 - Given we only have 500 samples can we get our RNN to converge if correctly regularized and we use certain techniques such as super convergence or other ?
