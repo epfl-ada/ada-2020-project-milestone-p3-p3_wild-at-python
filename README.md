@@ -58,4 +58,4 @@ In our case the only data available is the one that came with the paper. No augm
 # Questions to the TAs
 
 Q: We still don't know how much time it will take us to build the RNN models and run them. Our goal is to build the two RNNs and do analysis on both of them, but if the task appears to be very time consuming and end up not having enough time to do both of them, is it a problem if we only do the rst one in this case?
-PAGE4
+
