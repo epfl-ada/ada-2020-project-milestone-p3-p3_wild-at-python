@@ -1,9 +1,9 @@
 ﻿
-**1  Title**
+#1  Title
 
 Linguistic harbringers of betrayal
 
-**2  Abstract**
+#2  Abstract
 
 For the linguistics harbringers of betrayal, the authors try to predict if a betrayal is going to occur or not, using the following features of the messages:
 
