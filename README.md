@@ -1,6 +1,6 @@
 ﻿
-# 1 Project Milestone 3: Predicting betrayal using fea- tures and time
-# 2 Abstract
+#  Project Milestone 3: Predicting betrayal using fea- tures and time
+# 1 Abstract
 
 For the linguistics harbringers of betrayal, the authors try to predict if a betrayal is going to occur or not, using the following features of the messages:
 
@@ -13,15 +13,15 @@ However, we do notice two things that we can add to the analysis made in this pa
 
 When we say text handling and time series we usually hear with it recurrent neural nets, which are perfect for the job because of their computation graph. Thus, we will try to use them to make some analyses on their results
 
-# 3  Research Questions
+# 2  Research Questions
 - What is the eect of time on the ecien cy of model in foretelling betrayal ?
 - What if we add automatic feature extraction ? Does this improve the performance of the model ?
 - Given we only have 500 samples can we get our RNN to converge if correctly regularized and we use certain techniques such as super convergence or other ?
-# 4  Proposed datasets
+# 3  Proposed datasets
 
 In our case the only data available is the one that came with the paper. No augmentation can be done, however additional preprocessing will be performed.
 
-# 5  Methods
+# 4  Methods
 
 ***Building the network:*** We plan on deploying the RNN (with LSTM layers) with the Keras library to answer the questions previously asked. The architectures of both RNNs are going to be specically tuned for each problem.
 
@@ -31,7 +31,7 @@ In our case the only data available is the one that came with the paper. No augm
 
 ![](P3\_Milestone.002.png)
 
-# 6  Proposed timeline
+# 5  Proposed timeline
 1. First week
 - First we preprocess the data
 - Design the rst RNN and build it.
@@ -46,7 +46,7 @@ In our case the only data available is the one that came with the paper. No augm
 - Second part of data story
 - Write the report
 - Film the video
-# 7  Organization within the team
+# 6  Organization within the team
 - Design of both RNNs (ana, nizar, zeineb)
 - Implementation of the rst RNN (nizar)
 - Implementation of second RNN (ana + zeineb)
@@ -55,7 +55,7 @@ In our case the only data available is the one that came with the paper. No augm
 - report (ana, nizar, zeineb)
 - data story (ana)
 - video (ana, nizar, zeineb)
-# 8  Questions to the TAs
+# 7  Questions to the TAs
 
 Q: We still don't know how much time it will take us to build the RNN models and run them. Our goal is to build the two RNNs and do analysis on both of them, but if the task appears to be very time consuming and end up not having enough time to do both of them, is it a problem if we only do the rst one in this case?
 PAGE4
