@@ -13,7 +13,7 @@ Under the scope of EPFL's ADA class project, we will perform a creative extensio
 Our project consists of two parts, each with a different dataset.
 * The first dataset is the diplomacy game dataset that was provided with the paper 
 
-* The second dataset is the Fake and real news dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).  
+* The second dataset is the Fake and real news dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).
 
 This dataset contains two sets, a set of real news and another one of fake news. Both sets contain the same features, which are: 
 * **text**: The actual text of the news article. 
@@ -37,7 +37,7 @@ The  truthful  articles  were  obtained by  crawling  articles  from  Reuters.co
 ![](P3\_Milestone.002.png)
 
 # Proposed timeline
-1. First week  
+1. First week 
 - preprocess the diplomacy dataset   
 - build the RNN model for the diplomacy dataset and run it  
 - analyze the results  
