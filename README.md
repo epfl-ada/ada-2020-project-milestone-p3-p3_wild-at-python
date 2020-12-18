@@ -1,4 +1,4 @@
-﻿﻿# Project Milestone 3: Linguistic Cues for Textual Classification  
+# Project Milestone 3: Linguistic Cues for Textual Classification  
 
 # Abstract
 
