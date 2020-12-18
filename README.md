@@ -2,16 +2,8 @@
 # Project Milestone 3: Linguistic Cues for Textual Classification
 # Abstract
 
-For the linguistics harbringers of betrayal, the authors try to predict if a betrayal is going to occur or not, using the following features of the messages:
-
-![](P3\_Milestone.001.png)
-
-However, we do notice two things that we can add to the analysis made in this paper:
-
-- Time: The temporal relation between seasons, or the evolution of the features through time, may add a lot to the model in predictive power. Seasons evolve through time and things that have been said before might inuence things and events that will happen in the future.
-- Linguistic cues: The features that directly allows to foretell betrayal are very implicit for us humans and we cannot do better than average. Thus, dening the features ourselves cannot give us the best give us a correlation result with the output. In modern day text handling or sentiment analysis, we let the model extract its own features from the text, and this usually gives very accurate results.
-
-When we say text handling and time series we usually hear with it recurrent neural nets, which are perfect for the job because of their computation graph. Thus, we will try to use them to make some analyses on their results
+Under the scope of EPFL's ADA class project, we will perform a creative extension on the paper Linguistic Harbingers of Betrayal. In this project we will work on the subject of Natural Language Processing (NLP) and more specially on Linguistic cues. As we will present to you in the next section, the authors of the paper worked on the messages of the diplomacy game and extracted some features to do some analysis and then train a simple model to perform a complex task, even for humans, which is detecting betrayal. To extend this work we will first try to train more complex and adapted models for this kind of tasks, like RNNs to see how they perform and draw some conclusions from the results. Then we will extend this work to another and completely different dataset, a dataset of news. The goal is to try and see if the same features can be used for various NLP examples.
+ 
 
 # Research Questions  
 - Can analysis using time series, like with RNNs, help improve the performance of the model made by the authors? 
@@ -34,11 +26,13 @@ The  truthful  articles  were  obtained by  crawling  articles  from  Reuters.co
 
 # Methods
 
-***Building the network:*** We plan on deploying the RNN (with LSTM layers) with the Keras library to answer the questions previously asked. The architectures of both RNNs are going to be specically tuned for each problem.
+***Building the network:*** We plan on deploying the RNN with the Keras library to train it on the diplomacy features.
 
-***Feature detection:*** The objective is to make a specially tuned architecture of RNNs for this problem. We will start rst with an architecture to observe the eect of adding time and then add another one that mixes the time factor with the automatically deduced linguistic cues. We will in fact use RNNs with LSTM layers to take advantage of their memory power for better predictions.
+***Data collection:*** To reprocudes the analysis done in Linguistic Harbingers of Betrayal paper we need to preprocess the news dataset and extract the same features from it.
 
-***Data analysis:*** We are interested in detecting new features in the messages and see the eect of time in the prediction. By analysing the results of our models we will see if there are others cues to detect betrayal that the authors didn't detect and use.
+***MLP with features*** We will run an MLP on the extracted features and analyse the results 
+
+***Textual analysis:*** We will run two models, MLP and RNN with LSTM, on the news texts given them the freedem to lear their own features and then compre the results with the previous model
 
 ![](P3\_Milestone.002.png)
 
