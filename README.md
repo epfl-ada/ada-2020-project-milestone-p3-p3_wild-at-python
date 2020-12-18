@@ -76,7 +76,11 @@ We split the code into several sections, to keep it clear and well organized.
 * **Textual_analysis.ipynb**: this file  contains the textual analysis on the news dataset (MLP + RNN on the texts)
 * **metrics.py**: file that contains methods to compute the metrics, they are used in several models thus we put them in a separate file
 
+
 **Note**: all the files are part of our project and we kindly ask you to correct them all.
+
+**Note**: we included the files in a zip format please unzip them before running the code, you also need to download the file from glove file from http://nlp.stanford.edu/data/glove.twitter.27B.zip.
+
 
 # Data story  
 You can find our data story in the following link https://zeineb111.github.io/Linguistic-cues-for-Textual-classification/
