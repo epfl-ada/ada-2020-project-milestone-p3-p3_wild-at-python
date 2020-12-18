@@ -86,7 +86,8 @@ We split the code into several sections, to keep it clear and well organized.
 **Data Files**
 * **data_diplomacy** contains the diplomacy game dataset 
 * **data_news** contains the news dataset 
-* **news_features** contains the features that we extracted from the news dataset
+* **news_features** contains the features that we extracted from the news dataset  
+* **premises_conclusions** contains premises and conclusions markers used to extract the features from the news 
 
 
 # Data story  
