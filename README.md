@@ -1,4 +1,4 @@
-﻿# Project Milestone 3: Linguistic Cues for Textual Classification
+﻿﻿# Project Milestone 3: Linguistic Cues for Textual Classification
 # Abstract
 
 Under the scope of EPFL's ADA class project, we will perform a creative extension on the paper Linguistic Harbingers of Betrayal. In this project we will work on Natural Language Processing (NLP) and more specially on Linguistic cues. As we will present to you in the next section, the authors of the paper worked on the messages of the diplomacy game and extracted some features to do some analysis and then train a simple model to perform a complex task, even for humans, which is detecting betrayal. To extend this work we will first try to train more complex and adapted models for this kind of tasks, like RNNs to see how they perform and draw some conclusions from the results. Then we will extend this work to another and completely different dataset, a dataset of news. The goal is to try and see if the same features can be used for various NLP examples.
@@ -76,7 +76,11 @@ We split the code into several sections, to keep it clear and well organized.
 * **Textual_analysis.ipynb**: this file  contains the textual analysis on the news dataset (MLP + RNN on the texts)
 * **metrics.py**: file that contains methods to compute the metrics, they are used in several models thus we put them in a separate file
 
+
 **Note**: all the files are part of our project and we kindly ask you to correct them all.
+
+**Note**: we included the files in a zip format please unzip them before running the code, you also need to download the file from glove file from http://nlp.stanford.edu/data/glove.twitter.27B.zip, the file is large and we are not able to push it on github.
+
 
 # Data story  
 You can find our data story in the following link https://zeineb111.github.io/Linguistic-cues-for-Textual-classification/
