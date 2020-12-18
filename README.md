@@ -78,7 +78,7 @@ We split the code into several sections, to keep it clear and well organized.
 
 **Note**: all the files are part of our project and we kindly ask you to correct them all.
 
-#Data story  
+# Data story  
 You can find our data story in the following link https://zeineb111.github.io/Linguistic-cues-for-Textual-classification/
 
 
