@@ -1,5 +1,5 @@
 ﻿
-# Project Milestone 3: Predicting betrayal using features and time
+# Project Milestone 3: Linguistic Cues for Textual Classification
 # Abstract
 
 For the linguistics harbringers of betrayal, the authors try to predict if a betrayal is going to occur or not, using the following features of the messages:
@@ -13,13 +13,24 @@ However, we do notice two things that we can add to the analysis made in this pa
 
 When we say text handling and time series we usually hear with it recurrent neural nets, which are perfect for the job because of their computation graph. Thus, we will try to use them to make some analyses on their results
 
-# Research Questions
-- What is the eect of time on the ecien cy of model in foretelling betrayal ?
-- What if we add automatic feature extraction ? Does this improve the performance of the model ?
-- Given we only have 500 samples can we get our RNN to converge if correctly regularized and we use certain techniques such as super convergence or other ?
+# Research Questions  
+- Can analysis using time series, like with RNNs, help improve the performance of the model made by the authors? 
+- Can the features used by the authors generalize to analogous NLP classification problems with a dataset of Real and Fake news ? 
+- Will the models perform better if we give them the freedom of learning their own features from the texts? 
 # Proposed datasets
+Our project consists on two parts, each with a diffrent dataset.
+* The first dataset is the diplomacy game dataset that was provided with the paper 
 
-In our case the only data available is the one that came with the paper. No augmentation can be done, however additional preprocessing will be performed.
+* The second dataset is the Fake and real news dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).  
+
+This dataset contains two sets, a set of real news and another one of fake news. Both sets contain the same features, which are: 
+* **text**: The actual text of the news article. 
+* **title**: The title of the article.
+* **subject**: Every article is classified in a type of subject either 'Government News' or 'Middle-east' or 'News' or 'US_News' or 'left-news' or 'politics' or 'politicsNews' or 'worldnews'.
+*  **date**: date of publication of the article.
+
+
+The  truthful  articles  were  obtained by  crawling  articles  from  Reuters.com  (News website).  As  for  the  fake  news  articles,  they  were  collected  from  different  sources.  The  fake  news articles  were  collected  from  unreliable  websites  that  were  flagged  by  Politifact  (a fact-checking organization in the USA) and Wikipedia. The dataset contains different types of articles on different topics, however,the majority of articles focuson political and World news topics.
 
 # Methods
 
@@ -32,30 +43,51 @@ In our case the only data available is the one that came with the paper. No augm
 ![](P3\_Milestone.002.png)
 
 # Proposed timeline
-1. First week
-- First we preprocess the data
-- Design the rst RNN and build it.
-- Run the RNN to observe the eects of adding time.
-2. Second week
-- Perform statistical analysis on the results and add some comparison plots between our results and the paper's results.
-- First part of data story
-- Design the second RNN and build it.
-- Run the RNN to observe the eects of self learned linguistic cues.
-3. Third week
-- Perform statistical analysis on the results and add some comparison plots between our results and the paper's results and the our previous results.
-- Second part of data story
-- Write the report
-- Film the video
-# Organization within the team
-- Design of both RNNs (ana, nizar, zeineb)
-- Implementation of the rst RNN (nizar)
-- Implementation of second RNN (ana + zeineb)
-- Statistical analysis + plots of the first RNN (nizar)
-- Statistical analysis + plots of the second RNN (zeineb)
-- report (ana, nizar, zeineb)
-- data story (ana)
-- video (ana, nizar, zeineb)
-# Questions to the TAs
+1. First week  
+- preprocess the diplomacy dataset   
+- build the RNN model for the diplomacyy dataset and run it  
+- analyse the results  
+- Explore the second dataset  
+2. Second week  
+- preprocess the second dataset  
+- extract the features from the second dataset  
+- analyse the results  
+- Implement an MLP model and train it with the collected features  
+- first part of the data story  
+3. Third week  
+- Implement an MLP model and train it on the texts of the news dataset   
+- Implement an RNN model an run it on the texts of the news dataset   
+- Analyse and compre the results of the diffrent models 
+- clean and merge the code
+- Second part of data story  
+- Film the video  
 
-Q: We still don't know how much time it will take us to build the RNN models and run them. Our goal is to build the two RNNs and do analysis on both of them, but if the task appears to be very time consuming and end up not having enough time to do both of them, is it a problem if we only do the rst one in this case?
+# Organization within the team
+- preprocess the dimplomacy dataset, design the RNN model and run it (ana, zeineb, nizar)  
+- Explore the new dataset, preprocess it and extract the features (zeineb)  
+- Analyse the results and compare the features (zeineb, nizar)  
+- Implement an MLP model and train it with the collected features  (zeineb )  
+- Implement an MLP model and train it on the texts of the news dataset (nizar)  
+- Implement an RNN model an run it on the texts of the news dataset (nizar)  
+- Analyse and compre the results of the diffrent models ( zeineb, nizar)  
+- data story (zeineb, nizar, ana)
+- video (zeineb, nizar, ana)
+
+# Project structure  
+We split the code into several sections, to keep it clear and well organized. 
+
+* **Diplomacy.ipynb**: the Dimplomacy file contains all the work we did on the diplomacy dataset (preprocessing + RNN model)
+* **preprocess_coreNLP.ipynb**: this file contains the preprocessing of the news dataset and the sentiment analysis using the stanford coreNLP 
+* **features_extraction.ipynb**: this file contains the feautues extraction of the news datasets 
+* **Analysis_news.ipynb**: this file contains the analysis of all the features that we extracted for the news dataset and the MLP model that we trained on them 
+* **Textual_analysis.ipynb**: this file  contains the textual analysis on the news dataset (MLP + RNN on the texts)
+* **metrics.py**: file that contains methods to compute the metrics, they are used in several models thus we put them in a seperate file
+
+**Note**: all the files are part of our project and we kindly ask you to correct them all.
+
+
+
+
+
+
 
