@@ -83,6 +83,10 @@ We split the code into several sections, to keep it clear and well organized.
 
 **Note**: we included the files in a zip format please unzip them before running the code, you also need to download the file from glove file from http://nlp.stanford.edu/data/glove.twitter.27B.zip, the file is large and we are not able to push it on github.
 
+**Data File**
+* **data_diplomacy** contains the diplomacy game dataset 
+* **data_news** contains the news dataset 
+* **news_features** contains the features that we extracted from the news dataset
 
 
 # Data story  
